@@ -48,6 +48,7 @@ class App extends Component {
           alignItems: 'center',
           fontSize: 40,
           color: '#010101',
+          gap: '30px',
         }}
       >
         <h1>Please leave feedback</h1>
