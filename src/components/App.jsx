@@ -27,15 +27,11 @@ export const App = () => {
         break;
 
       default:
-        break;
+        return;
     }
   };
-  
   useEffect(() => {
     setTotal(good + bad + neutral);
-  }, [good, bad, neutral]);
-
-  useEffect(() => {
     setPositivePercentage(Math.round((good / (good + bad + neutral)) * 100));
   }, [good, bad, neutral]);
 
